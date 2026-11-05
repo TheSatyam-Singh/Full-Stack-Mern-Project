@@ -7,7 +7,7 @@ import { commentIcon, emojiIcon, likeIconOutline, moreIcons, saveIconFill, saveI
 import { Picker } from 'emoji-mart'
 import ScrollToBottom from 'react-scroll-to-bottom';
 import axios from 'axios';
-import moment from 'moment';
+import { POST_DISPLAY_DATE } from '../../utils/constants';
 
 const PostItem = ({ _id, caption, likes, comments, image, postedBy, savedBy, createdAt, setUsersDialog, setUsersList }) => {
 
@@ -131,7 +131,7 @@ const PostItem = ({ _id, caption, likes, comments, image, postedBy, savedBy, cre
                     <span className="text-[13px] text-gray-500">No Comments Yet!</span>
 
                 }
-                <span className="text-xs text-gray-500 cursor-pointer">{moment(createdAt).fromNow()}</span>
+                <span className="text-xs text-gray-500 cursor-pointer">{POST_DISPLAY_DATE}</span>
 
                 {viewComment &&
                     <ScrollToBottom className="w-full h-52 overflow-y-auto py-1">

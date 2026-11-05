@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addComment, clearErrors, deletePost, likePost, savePost } from '../../../actions/postAction';
 import { Picker } from 'emoji-mart';
 import { metaballsMenu } from '../SvgIcons';
-import moment from 'moment';
+import { POST_DISPLAY_DATE } from '../../../utils/constants';
 
 const PostItem = ({ _id, caption, likes, comments, image, postedBy, savedBy, createdAt }) => {
 
@@ -148,7 +148,7 @@ const PostItem = ({ _id, caption, likes, comments, image, postedBy, savedBy, cre
                                 <span className="w-full font-semibold text-sm">{likes.length} likes</span>
 
                                 {/* time */}
-                                <span className="text-xs text-gray-500">{moment(createdAt).fromNow()}</span>
+                                <span className="text-xs text-gray-500">{POST_DISPLAY_DATE}</span>
                             </div>
 
                             {/* comment input */}

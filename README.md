@@ -38,7 +38,7 @@ Follow the steps below to get the project running locally 👇
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/jigar-sable/instagram-mern.git
+git clone https://github.com/TheSatyam-Singh/Full-Stack-Mern-Project.git
 cd instagram-mern
 ```
 ### 2️⃣ Setup Backend
@@ -107,9 +107,9 @@ Now your app should be running successfully 🎉
 - 😄 Emoji Integration via Emoji Mart
 
 **Image Storage**
-- 📷 Branch [dev-v3-cloudinary](https://github.com/jigar-sable/instagram-mern/tree/dev-v3-cloudinary): Utilizes Cloudinary for Image Storage
-- ☁️ Branch [dev-v2-aws](https://github.com/jigar-sable/instagram-mern/tree/dev-v2-aws): Leverages AWS S3 for Image Storage
-- 💾 Branch [dev-v1](https://github.com/jigar-sable/instagram-mern/tree/dev-v1): Relies on Local Storage Solution
+- 📷 Branch [dev-v3-cloudinary](https://github.com/TheSatyam-Singh/Full-Stack-Mern-Project/tree/dev-v3-cloudinary): Utilizes Cloudinary for Image Storage
+- ☁️ Branch [dev-v2-aws](https://github.com/TheSatyam-Singh/Full-Stack-Mern-Project/tree/dev-v2-aws): Leverages AWS S3 for Image Storage
+- 💾 Branch [dev-v1](https://github.com/TheSatyam-Singh/Full-Stack-Mern-Project/tree/dev-v1): Relies on Local Storage Solution
 
 ## Sneak Peek of Home Page 🙈 :
 ![home](https://user-images.githubusercontent.com/64949957/159116089-cfc2b4c5-dc7d-4d4b-a0c8-668f89ce5412.png)
@@ -127,7 +127,4 @@ Now your app should be running successfully 🎉
 
 <h2>📬 Contact</h2>
 
-Feel free to reach me through the below handles if you'd like to contact me.
-
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jigar-sablee)
-[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/jigarsable.dev)
+For questions or contributions, contact [TheSatyam-Singh](https://github.com/TheSatyam-Singh).

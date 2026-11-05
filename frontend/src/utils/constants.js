@@ -1,4 +1,5 @@
 export const SOCKET_ENDPOINT = "http://localhost:4000";
+export const POST_DISPLAY_DATE = "5 Nov 2026";
 
 export const stories = [
     {
