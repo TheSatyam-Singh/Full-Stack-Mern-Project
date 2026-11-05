@@ -1,12 +1,19 @@
 const mongoose = require('mongoose');
 
-const connectDatabase = () => {
-    mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => {
+const connectDatabase = async () => {
+    if (!process.env.MONGO_URI) {
+        throw new Error('MONGO_URI is not configured');
+    }
+
+    try {
+        await mongoose.connect(process.env.MONGO_URI, {
+            serverSelectionTimeoutMS: 10000,
+        });
         console.log("Mongoose Connected");
-    }).catch((error) => {
-        console.log(error);
-    });
+    } catch (error) {
+        console.error(`MongoDB connection failed: ${error.message}`);
+        throw error;
+    }
 }
 
 module.exports = connectDatabase;

@@ -4,7 +4,13 @@ const app = require('./backend/app');
 const connectDatabase = require('./backend/config/database');
 const PORT = process.env.PORT || 4000;
 
-connectDatabase();
+const startServer = async () => {
+    try {
+        await connectDatabase();
+    } catch (error) {
+        process.exitCode = 1;
+        return;
+    }
 
 // deployment
 __dirname = path.resolve();
@@ -90,3 +96,6 @@ io.on("connection", (socket) => {
         // console.log(users);
     });
 });
+};
+
+startServer();

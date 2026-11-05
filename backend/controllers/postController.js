@@ -2,7 +2,7 @@ const Post = require('../models/postModel');
 const User = require('../models/userModel');
 const catchAsync = require('../middlewares/catchAsync');
 const ErrorHandler = require('../utils/errorHandler');
-const { deleteFile } = require('../utils/awsFunctions');
+const { deleteFile } = require('../utils/s5Functions');
 
 // Create New Post
 exports.newPost = catchAsync(async (req, res, next) => {
